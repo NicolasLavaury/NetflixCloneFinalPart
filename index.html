@@ -1,0 +1,536 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width-device-width, initial-scale=1.0">
+    <meta name="author" content="Nicolas Lavaury">
+    <meta name="description" content="Page Netflix">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="icon" href="/favicon.png">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="./assets/style.css">
+    <link rel="stylesheet" href="path/to/font-awesome/css/font-awesome.min.css">
+    <title>Netflix Page</title>
+    <style>
+      .no-scrollbar::-webkit-scrollbar {display: none;}
+    </style>
+    <script src="main.js">
+    </script>
+    <script src="assets/video.js">
+    </script>
+
+  </head>
+
+  <body class="overflow-x-hidden">
+    <script src="https://code.jquery.com/jquery-2.1.4.min.js"></script>
+ 
+
+
+    <header>
+      <section class="h-screen z-0">
+      <a href="#">
+      <div>
+      <img class="w-screen h-screen object-cover z-30 absolute visible hover:opacity-0 transition duration-[2000ms]" src="/assets/Logo/sbr.jpg"></img>
+     
+      <video autoplay muted loop class="absolute w-screen h-screen z-10 object-cover" src="/assets/Videos/sbr.mp4">
+      </video>
+       </a>
+      </div>
+      
+     </div
+    >
+  </div>
+
+  
+       
+      <div class="z-50 flex items-center text-white p-8">
+        <nav class="fixed z-50 object-cover"> 
+         <div class="z-50 flex items-center space-x-8"> 
+          <img src="/assets/Logo/logo.png" class="h-24 cursor-pointer">
+          <div class="cursor-pointer hover:text-gray-600"><p>Home</p></div>
+          <div class="cursor-pointer hover:text-gray-600"><p>TV Shows</p></div>
+          <div class="cursor-pointer hover:text-gray-600"><p>Movies</p></div>
+          <div class="cursor-pointer hover:text-gray-600"><p>News & Popular</p></div>
+          <div class="cursor-pointer hover:text-gray-600"><p>My List</p></div>
+          <div class="cursor-pointer hover:text-gray-600"><p>Watch Again</p></div>
+         </div>
+       </nav>
+         <div class="flex justify-end fixed z-50 ml-[1250px]  fill-white space-x-8">
+        <svg class="cursor-pointer h-6 hover:fill-gray-500" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M15.5 14h-.79l-.28-.27A6.471 6.471 0 0 0 16 9.5 6.5 6.5 0 1 0 9.5 16c1.61 0 3.09-.59 4.23-1.57l.27.28v.79l5 4.99L20.49 19l-4.99-5zm-6 0C7.01 14 5 11.99 5 9.5S7.01 5 9.5 5 14 7.01 14 9.5 11.99 14 9.5 14z"></path></svg>
+        
+        
+        <i onmouseenter="notif_hover()" class="fa-solid fa-bell mt-1 cursor-pointer hover:text-gray-500"></i>
+        
+        
+       <div class="fixed hidden mt-8 mr-32 text-white bell_area onmouseenter="notif_hover()" onmouseleave="unnotif_hover()"">
+          <div class="flex p-3 bg-black bg-opacity-50 hover:bg-opacity-100">
+              <img class="w-40 rounded-md" src="assets/Logo/snk.jpg">
+              <div>
+                <p>RUMBLING RUMBLING <br> NEW SEASONS</p>
+                <p class="italic">1 week ago</p>
+              </div>
+          </div>
+          
+          <div class="flex p-3 bg-black bg-opacity-50 hover:bg-opacity-100 cursor-pointer">
+            <img class="w-40 h-[100px] rounded-md" src="assets/Logo/mha.jpg">
+            <div>
+              <p>CONTINUE WATCHING <br> NEW EPISODES</p>
+              <p class="italic">2 week ago</p>
+            </div>
+        </div>
+
+        <div class="flex p-3 bg-black bg-opacity-50 hover:bg-opacity-100 cursor-pointer">
+          <img class="w-40 rounded-md" src="assets/Logo/boruto.jpg">
+          <div>
+            <p>BORUTO'S NEW POWER? <br> NEW EPISODES</p>
+            <p class="italic">3 week ago</p>
+          </div>
+      </div>
+
+      <div class="flex p-3 bg-black bg-opacity-50 hover:bg-opacity-100 cursor-pointer">
+        <img class="w-40 rounded-md" src="assets/Logo/naruto.jpg">
+        <div>
+          <p>WATCH OG NARUTO <br> NEW EPISODES</p>
+          <p class="italic">4 week ago</p>
+        </div>
+    </div>
+        </div>
+
+
+
+
+        <svg class="cursor-pointer h-6 hover:fill-gray-500" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" viewBox="0 0 464.628 464.628" enable-background="new 0 0 464.628 464.628">
+            <path d="m394.33,105.596h-76.136c22.944-22.372 37.216-53.596 37.216-88.096 0-9.665-7.835-17.5-17.5-17.5-44.786,0-84.057,24.045-105.596,59.9-21.539-35.855-60.81-59.9-105.595-59.9-9.665,0-17.5,7.835-17.5,17.5 0,34.5 14.273,65.724 37.216,88.096h-76.137c-9.665,0-17.5,7.835-17.5,17.5v324.033c0,9.665 7.835,17.5 17.5,17.5h324.032c9.665,0 17.5-7.835 17.5-17.5v-324.033c0-9.665-7.835-17.5-17.5-17.5zm-17.5,162.016h-127.016v-127.016h127.016v127.016zm-58.646-230.385c-7.525,32.765-33.378,58.618-66.144,66.143 7.526-32.766 33.379-58.619 66.144-66.143zm-105.596,66.142c-32.765-7.525-58.618-33.378-66.143-66.143 32.765,7.525 58.618,33.378 66.143,66.143zm2.226,37.227v127.016h-127.016v-127.016h127.016zm-127.016,162.016h127.016v127.017h-127.016v-127.017zm162.016,127.016v-127.016h127.016v127.017h-127.016z"/>
+          </svg>
+          <button class="flex items-center rounded">
+            <img src="/assets/Logo/avatar blue.png" class="h-8 w-8 rounded cursor-pointer" >
+                   <div class="group">
+                       <div>
+                    <svg class="absolute rotate-90 hover:top[500px] transition-all hover:-rotate-90 h-[100px] w-[100px] p-4 pr-8 left-[160px] bottom-[-40px] cursor-pointer fill-white items-center hover:fill-gray-500" width="100%" height="100%" version="1.1" viewBox="0 0 20 20" x="0px" y="0px" class="ScIconSVG-sc-1bgeryd-1 hcjcOH"><g><path d="M6.5 5.5L11 10l-4.5 4.5L8 16l6-6-6-6-1.5 1.5z"></path></g></svg>
+                       </div>
+                      <div class="hidden group-hover:block bg-black bg-opacity-50 border-500-violet w-96 h-[520px] absolute top-[40px] left-[-150px]">
+                        <div class="flex items-center space-x-4 hover:bg-gray-800 hover:bg-opacity-50">
+                          <img class="ml-5 mt-5 w-16 h-16 rounded-lg" src="/assets/Logo/luffypfp.jpg"></img>
+                          <p>LuffyTaro</p>
+                        </div>
+                        <div class="flex items-center space-x-4 hover:bg-gray-800 hover:bg-opacity-50">
+                          <img class="ml-5 mt-5 w-16 h-16 rounded-lg" src="/assets/Logo/zoro.jpg"></img>
+                          <p>Zorojuro</p>
+                        </div>
+                        <div class="flex items-center space-x-4 hover:bg-gray-800 hover:bg-opacity-50">
+                          <img class="ml-5 mt-5 w-16 h-16 rounded-lg" src="/assets/Logo/law.jpg"></img>
+                          <p>Law</p>
+                        </div>
+                        <div class="flex items-center space-x-4 hover:bg-gray-800 hover:bg-opacity-50">
+                          <img class="ml-5 mt-5 w-16 h-16 rounded-lg" src="/assets/Logo/eustass.jpg"></img>
+                          <p>Eusstass Kid</p>
+                        </div>
+                        <div class="flex items-center space-x-4 hover:bg-gray-800 hover:bg-opacity-50">
+                          <i class="fa-solid fa-gear ml-5 mt-5 text-7xl"></i>
+                          <p>Settings</p>
+                        </div>
+                        <div class="flex items-center space-x-4 hover:bg-gray-800 hover:bg-opacity-50">
+                          <i class="fa-solid fa-arrow-right-from-bracket ml-5 mt-5 text-7xl"></i>
+                          <p>Sign out</p>
+                        </div>
+                        
+                       </div>
+                   </div>
+          </button>  
+         </div>
+       </div>
+    <container class="z-50 bg-black">
+      <div class="flex flex-col mr-80">
+        <div class="mt-40 pr-80 ml-10 mr-80 text-white z-40">
+        <img class="cursor-pointer" src="/assets/Logo/JoJo's_Bizarre_Adventure_logo.png">
+        <div class="mr-20 space-y-2">
+            <h1>Jojo's Bizarre Adventure Steel Ball Run announced for 2025!</h1>
+           <div class="space-y-3"> <p>Set in the United States in 1890, the story follows Johnny Joestar, a paraplegic ex-jockey, and Gyro Zeppeli, a master of a mystical art called Spinning, as they compete with a host of others in the Steel Ball Run: a madcap race across the United States for a $50 million grand prize.</p></div>
+        </div>
+        
+        </div>
+        
+        
+        </div>
+    </div>
+    <div class="flex items-center ml-10 z-50">
+        <button class="flex items-center bg-white hover:bg-gray-500 rounded-md h-10 w-40 z-50 text-black font-bold" type="button">
+           <svg ssheight="100%" version="1.1" viewBox="0 0 36 36" width="100%"><use class="ytp-svg-shadow z-50" xlink:href="#ytp-id-338"></use><path class="ytp-svg-fill" d="M 12,26 18.5,22 18.5,14 12,10 z M 18.5,22 25,18 25,18 18.5,14 z" id="ytp-id-338"></path></svg>
+           <div class="pr-20 z-50">Play
+           </div>
+              
+
+       </button>
+        <button class="flex items-center z-50 bg-black rounded-md py-2 h-10 w-40 ml-4 text-white text-sm font-bold hover:bg-gray-500" type="button">
+           <svg class="fill-white h-4 z-50 w-10" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" id="Layer_1" x="0px" y="0px" viewBox="0 0 330 330" style="enable-background:new 0 0 330 330;" xml:space="preserve">
+               <g>
+                   <g>
+                       <g>
+                           <path d="M165,0.008C74.019,0.008,0,74.024,0,164.999c0,90.977,74.019,164.992,165,164.992s165-74.015,165-164.992     C330,74.024,255.981,0.008,165,0.008z M165,299.992c-74.439,0-135-60.557-135-134.992S90.561,30.008,165,30.008     s135,60.557,135,134.991C300,239.436,239.439,299.992,165,299.992z"/>
+                           <path d="M165,130.008c-8.284,0-15,6.716-15,15v99.983c0,8.284,6.716,15,15,15s15-6.716,15-15v-99.983     C180,136.725,173.284,130.008,165,130.008z"/>
+                           <path d="M165,70.011c-3.95,0-7.811,1.6-10.61,4.39c-2.79,2.79-4.39,6.66-4.39,10.61s1.6,7.81,4.39,10.61     c2.79,2.79,6.66,4.39,10.61,4.39s7.81-1.6,10.609-4.39c2.79-2.8,4.391-6.66,4.391-10.61s-1.601-7.82-4.391-10.61     C172.81,71.61,168.95,70.011,165,70.011z"/>
+                       </g>
+                   </g>
+               </g>
+               <g>
+               </g>
+               <g>
+               </g>
+               <g>
+               </g>
+               <g>
+               </g>
+               <g>
+               </g>
+               <g>
+               </g>
+               <g>
+               </g>
+               <g>
+               </g>
+               <g>
+               </g>
+               <g>
+               </g>
+               <g>
+               </g>
+               <g>
+               </g>
+               <g>
+               </g>
+               <g>
+               </g>
+               <g>
+               </g>
+               </svg>
+           <div class="pr-20">More Info
+           </div>
+        
+       </div>
+       </button>
+    </container>
+      </section>
+    </header>
+   
+
+    <main class="z-30 text-white font-bold bg-black">
+    <section class="bg-black ">
+    <div class="flex flex-col" id="container">
+        <p class="ml-10">Watch It Again</p>
+      <div id="Netflix" class="flex flex-row space-x-8 cursor-pointer no-scrollbar overflow-x-scroll carousel scroll-smooth">
+
+             
+        <button class="mt-20 leftArrow hover:fill-black absolute" onclick="leftScroll('.carousel','.leftArrow')">
+          <i class="fas fa-angle-left text-white text-3xl"></i>
+        </button>
+        <img class="pt-8 ml-10 h-48 w-64" src="/assets/Logo/snk.jpg">
+         <img class="pt-8 ml-10 h-48 w-64" src="/assets/Logo/naruto.jpg">
+         <img class="pt-8 ml-10 h-48 w-64" src="/assets/Logo/boruto.jpg">
+         <img class="pt-8 ml-10 h-48 w-64" src="/assets/Logo/mha.jpg">
+         <img class="pt-8 ml-10 h-48 w-64" src="/assets/Logo/shippuden.jpg">
+         <img class="pt-8 ml-10 h-48 w-64" src="/assets/Logo/so.jpg">
+         <img class="pt-8 ml-10 h-48 w-64" src="/assets/Logo/hxh.jpg">
+         <img class="pt-8 ml-10 h-48 w-64" src="/assets/Logo/evangleion.jpg">
+         <img class="pt-8 ml-10 h-48 w-64" src="/assets/Logo/broly.jpg">
+         <img class="pt-8 ml-10 h-48 w-64" src="/assets/Logo/7ds.jpg">
+         <img class="pt-8 ml-10 h-48 w-64" src="/assets/Logo/kny.jpg">
+
+          <div class="absolute right-0 mt-20 rightArrow">
+          <button class="rotate-180" onclick="rightScroll('.carousel','rightArrow')">
+            <i class="fas fa-angle-left text-white text-3xl"></i>
+            </button> 
+          </div>
+      
+       
+      </div>
+    </section>
+      <p class="ml-10">Netflix Originals</p>
+      <section class="bg-black">
+     <div class="flex flex-row space-x-8 cursor-pointer no-scrollbar overflow-x-hidden overflow-x-scroll scroll-smooth carousel1">
+      <button class="mt-20 leftArrow hover:fill-black absolute" onclick="leftScroll('.carousel1','.leftArrow1')">
+        <i class="fas fa-angle-left text-white text-3xl"></i>
+      </button>
+      <img class="pt-8 ml-10 h-96 w-64" src="/assets/Logo/bleach.jpg">
+      <img class="pt-8 ml-10 h-96 w-64" src="/assets/Logo/oussama.jpg">
+      <img class="pt-8 ml-10 h-96 w-64" src="/assets/Logo/tr.jpg">
+      <img class="pt-8 ml-10 h-96 w-64" src="/assets/Logo/komi.jpg">
+      <img class="pt-8 ml-10 h-96 w-64" src="/assets/Logo/fusion.jpg">
+      <img class="pt-8 ml-10 h-96 w-64" src="/assets/Logo/bojack.jpg">
+      <div class="absolute right-0 mt-20 rightArrow">
+        <button class="rotate-180" onclick="rightScroll('.carousel1','rightArrow1')">
+          <i class="fas fa-angle-left text-white text-3xl"></i>
+          </button> 
+        </div>
+     </div>
+    </section>
+
+    <container  class="bg-black p-0 ml-5 space-x-4 mt-8 mb-2 grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-5 2xl:grid-cols-7 gap-4 rounded ">
+      <a href="#">
+          <span class="ml-10 mt-4 text-white text-xl absolute font-bold z-40">Action</span>
+          <div class="rounded-xl bg-gradient-to-r from-orange-500 w-[15rem] h-[4rem] absolute z-30"></div>
+
+          <img class="rounded-xl w-[15rem] h-[4rem] object-cover " src="assets/Logo/action.jpg">
+      </a>
+    
+       <div>
+    <a href="#">
+        <span class="ml-10 mt-4 text-white text-xl absolute font-bold z-40">Anime</span>
+        <div class="rounded-xl bg-gradient-to-r from-pink-500 w-[15rem] h-[4rem] absolute z-30"></div>
+
+        <img class="rounded-xl w-[15rem] h-[4rem] object-cover " src="assets/Logo/boruto.jpg">
+      </a>
+      </div>
+
+      <div>
+        <a href="#">
+            <span class="ml-10 mt-4 text-white text-xl absolute font-bold z-40">Children</span>
+            <div class="rounded-xl bg-gradient-to-r from-blue-500 w-[15rem] h-[4rem] absolute z-30"></div>
+  
+            <img class="rounded-xl w-[15rem] h-[4rem] object-cover " src="assets/Logo/sonic.png">
+          </a>
+          </div>
+
+          <div>
+            <a href="#">
+                <span class="ml-10 mt-4 text-white text-xl absolute font-bold z-40">Comedy</span>
+                <div class="rounded-xl bg-gradient-to-r from-yellow-500 w-[15rem] h-[4rem] absolute z-30"></div>
+      
+                <img class="rounded-xl w-[15rem] h-[4rem] object-cover " src="assets/Logo/c3.jpg">
+              </a>
+              </div>
+
+              <div>
+                <a href="#">
+                    <span class="ml-10 mt-4 text-white text-xl absolute font-bold z-40">Docuseries</span>
+                    <div class="rounded-xl bg-gradient-to-r from-green-500 w-[15rem] h-[4rem] absolute z-30"></div>
+          
+                    <img class="rounded-xl w-[15rem] h-[4rem] object-cover " src="assets/Logo/tld.jpg">
+                  </a>
+                  </div>
+
+                  <div>
+                    <a href="#">
+                        <span class="ml-10 mt-4 text-white text-xl absolute font-bold z-40">Drama</span>
+                        <div class="rounded-xl bg-gradient-to-r from-pink-300 w-[15rem] h-[4rem] absolute z-30"></div>
+              
+                        <img class="rounded-xl w-[15rem] h-[4rem] object-cover " src="assets/Logo/okay.jpg">
+                      </a>
+                      </div>
+
+                      <div>
+                        <a href="#">
+                            <span class="ml-10 mt-4 text-white text-xl absolute font-bold z-40">Fantasy</span>
+                            <div class="rounded-xl bg-gradient-to-r from-red-500 w-[15rem] h-[4rem] absolute z-30"></div>
+                  
+                            <img class="rounded-xl w-[15rem] h-[4rem] object-cover " src="assets/Logo/got.jpg">
+                          </a>
+                          </div>
+
+    </container>
+
+    <container class="bg-black space-x-4 mt-8 mb-2 grid grid-cols-2 no-scrollbar md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-5 2xl:grid-cols-7 rounded >
+      <a href="#">
+        <span class="ml-10 mt-4 text-white text-xl absolute font-bold z-40">French</span>
+        <div class="rounded-xl bg-gradient-to-r from-blue-500 w-[15rem] h-[4rem] absolute z-30"></div>
+
+        <img class="rounded-xl w-[15rem] h-[4rem] object-cover " src="assets/Logo/taxi.jpg">
+    </a>
+  
+     <div>
+  <a href="#">
+      <span class="ml-10 mt-4 text-white text-xl absolute font-bold z-40">Horror</span>
+      <div class="rounded-xl bg-gradient-to-r from-purple-500 w-[15rem] h-[4rem] absolute z-30"></div>
+
+      <img class="rounded-xl w-[15rem] h-[4rem] object-cover " src="assets/Logo/jigsaw.jpg">
+    </a>
+    </div>
+
+    <div>
+      <a href="#">
+          <span class="ml-10 mt-4 text-white text-xl absolute font-bold z-40">International</span>
+          <div class="rounded-xl bg-gradient-to-r from-green-500 w-[15rem] h-[4rem] absolute z-30"></div>
+
+          <img class="rounded-xl w-[15rem] h-[4rem] object-cover " src="assets/Logo/squidgame.jpg">
+        </a>
+        </div>
+
+        <div>
+          <a href="#">
+              <span class="ml-10 mt-4 text-white text-xl absolute font-bold z-40">Reality</span>
+              <div class="rounded-xl bg-gradient-to-r from-pink-500 w-[15rem] h-[4rem] absolute z-30"></div>
+    
+              <img class="rounded-xl w-[15rem] h-[4rem] object-cover " src="assets/Logo/reality.jpg">
+            </a>
+            </div>
+
+            <div>
+              <a href="#">
+                  <span class="ml-10 mt-4 text-white text-xl absolute font-bold z-40">Romance</span>
+                  <div class="rounded-xl bg-gradient-to-r from-blue-300 w-[15rem] h-[4rem] absolute z-30"></div>
+        
+                  <img class="rounded-xl w-[15rem] h-[4rem] object-cover " src="assets/Logo/romance.jpg">
+                </a>
+                </div>
+
+                <div>
+                  <a href="#">
+                      <span class="ml-10 mt-4 text-white text-xl absolute font-bold z-40">Sci-Fi</span>
+                      <div class="rounded-xl bg-gradient-to-r from-purple-300 w-[15rem] h-[4rem] absolute z-30"></div>
+            
+                      <img class="rounded-xl w-[15rem] h-[4rem] object-cover " src="assets/Logo/tribes.jpg">
+                    </a>
+                    </div>
+
+                    <div>
+                      <a href="#">
+                          <span class="ml-10 mt-4 text-white text-xl absolute font-bold z-40">Thriller</span>
+                          <div class="rounded-xl bg-gradient-to-r from-orange-500 w-[15rem] h-[4rem] absolute z-30"></div>
+                
+                          <img class="rounded-xl w-[15rem] h-[4rem] object-cover " src="assets/Logo/thriller.jpg">
+                        </a>
+                        </div>
+      
+    </container>
+     <container class="bg-black">
+     <p class="ml-10 bg-black">Top 10 In France</p>
+     <div class="flex flex-row space-x-8 cursor-pointer no-scrollbar overflow-x-hidden scroll-smooth overflow-x-scroll carousel2">
+      <button class="bg-black mt-20 leftArrow hover:fill-black absolute" onclick="leftScroll('.carousel2','.leftArrow2')">
+        <i class="fas fa-angle-left text-white text-3xl"></i>
+      </button>
+      <img class="bg-black pt-8 ml-10 h-64 w-64" src="/assets/Logo/1.jpg">
+      <img class="pt-8 ml-10 h-64 w-64" src="/assets/Logo/2.jpg">
+      <img class="pt-8 ml-10 h-64 w-64" src="/assets/Logo/3.jpg">
+      <img class="pt-8 ml-10 h-64 w-64" src="/assets/Logo/4.jpg">
+      <img class="pt-8 ml-10 h-64 w-64" src="/assets/Logo/5.jpg">
+      <img class="pt-8 ml-10 h-64 w-64" src="/assets/Logo/6.jpg">
+      <img class="pt-8 ml-10 h-64 w-64" src="/assets/Logo/7.png">
+      <img class="pt-8 ml-10 h-64 w-64" src="/assets/Logo/8.png">
+      <img class="pt-8 ml-10 h-64 w-64" src="/assets/Logo/9.png">
+      <img class="pt-8 ml-10 h-72 w-64" src="/assets/Logo/10.PNG">
+      <div class="absolute right-0 mt-20 rightArrow">
+        <button class="rotate-180" onclick="rightScroll('.carousel2','rightArrow2')">
+          <i class="fas fa-angle-left text-white text-3xl"></i>
+          </button> 
+        </div>
+     </div>
+
+     <p class="ml-10">Action & Adventures</p>
+      <div class="flex flex-row space-x-8 cursor-pointer no-scrollbar overflow-x-hidden scroll-smooth overflow-x-scroll carousel3">
+        <button class="mt-20 leftArrow hover:fill-black absolute" onclick="leftScroll('.carousel3','.leftArrow3')">
+          <i class="fas fa-angle-left text-white text-3xl"></i>
+        </button>
+       <img id="action1" class="pt-8 ml-10 h-48 w-64" src="/assets/Logo/a1.jpg">
+       <img id="action2" class="pt-8 ml-10 h-48 w-64" src="/assets/Logo/a2.jpeg">
+       <img id="action3" class="pt-8 ml-10 h-48 w-64" src="/assets/Logo/a3.jpg">
+       <img id="action4" class="pt-8 ml-10 h-48 w-64" src="/assets/Logo/a4.jpg">
+       <img id="action5" class="pt-8 ml-10 h-48 w-64" src="/assets/Logo/a5.jpg">
+       <img id="action6" class="pt-8 ml-10 h-48 w-64" src="/assets/Logo/a6.jpg">
+       <div class="absolute right-0 mt-20 rightArrow">
+        <button class="rotate-180" onclick="rightScroll('.carousel3','rightArrow3')">
+          <i class="fas fa-angle-left text-white text-3xl"></i>
+          </button> 
+        </div>
+      </div>
+
+      <p class="ml-10">TV Comedies</p>
+      <div class="flex flex-row space-x-8 cursor-pointer no-scrollbar scroll-smooth overflow-x-hidden overflow-x-scroll carousel4">
+        <button class="mt-20 leftArrow hover:fill-black absolute" onclick="leftScroll('.carousel4','.leftArrow4')">
+          <i class="fas fa-angle-left text-white text-3xl"></i>
+        </button>
+       <img class="pt-8 ml-10 h-48 w-64" src="/assets/Logo/c1.jpg">
+       <img class="pt-8 ml-10 h-48 w-64" src="/assets/Logo/c2.jpg">
+       <img class="pt-8 ml-10 h-48 w-64" src="/assets/Logo/c3.jpg">
+       <img class="pt-8 ml-10 h-48 w-64" src="/assets/Logo/c4.jpg">
+       <img class="pt-8 ml-10 h-48 w-64" src="/assets/Logo/c5.jpg">
+       <img class="pt-8 ml-10 h-48 w-64" src="/assets/Logo/c6.jpg">
+       <div class="absolute right-0 mt-20 rightArrow">
+        <button class="rotate-180" onclick="rightScroll('.carousel4','rightArrow4')">
+          <i class="fas fa-angle-left text-white text-3xl"></i>
+          </button> 
+        </div>
+      </div>
+
+      <p class="ml-10">Japanese Animation</p>
+      <div class="flex flex-row space-x-8 cursor-pointer no-scrollbar scroll-smooth overflow-x-hidden overflow-x-scroll carousel5">
+        <button class="mt-20 leftArrow hover:fill-black absolute" onclick="leftScroll('.carousel5','.leftArrow5')">
+          <i class="fas fa-angle-left text-white text-3xl"></i>
+        </button>
+       <img id="anime1" class="pt-8 ml-10 h-48 w-64" src="/assets/Logo/snk.jpg">
+       <img id="anime2" class="pt-8 ml-10 h-48 w-64" src="/assets/Logo/naruto.jpg">
+       <img id="anime3" class="pt-8 ml-10 h-48 w-64" src="/assets/Logo/boruto.jpg">
+       <img id="anime4" class="pt-8 ml-10 h-48 w-64" src="/assets/Logo/mha.jpg">
+       <img id="anime5" class="pt-8 ml-10 h-48 w-64" src="/assets/Logo/broly.jpg">
+       <img id="anime6" class="pt-8 ml-10 h-48 w-64" src="/assets/Logo/7ds.jpg">
+       <div class="absolute right-0 mt-20 rightArrow">
+        <button class="rotate-180" onclick="rightScroll('.carousel5','rightArrow5')">
+          <i class="fas fa-angle-left text-white text-3xl"></i>
+          </button> 
+        </div>
+      </div>
+
+
+     </div>
+
+    </container>
+    </main>
+
+    <footer class="bg-black">
+    <div class="flex flex-row  ml-10 space-x-4">
+      <svg class="w-8  h-8 cursor-pointer"  xmlns="http://www.w3.org/2000/svg" x="0px" y="0px"
+               width="30" height="30"
+                viewBox="0 0 30 30"
+           style=" fill:#ffffff;">    <path d="M24,4H6C4.895,4,4,4.895,4,6v18c0,1.105,0.895,2,2,2h10v-9h-3v-3h3v-1.611C16,9.339,17.486,8,20.021,8 c1.214,0,1.856,0.09,2.16,0.131V11h-1.729C19.376,11,19,11.568,19,12.718V14h3.154l-0.428,3H19v9h5c1.105,0,2-0.895,2-2V6 C26,4.895,25.104,4,24,4z"></path></svg>
+           <svg class="w-8  h-8 cursor-pointer" xmlns="http://www.w3.org/2000/svg" x="0px" y="0px"
+           width="50" height="50"
+           viewBox="0 0 50 50"
+           style=" fill:#ffffff;">    <path d="M 16 3 C 8.83 3 3 8.83 3 16 L 3 34 C 3 41.17 8.83 47 16 47 L 34 47 C 41.17 47 47 41.17 47 34 L 47 16 C 47 8.83 41.17 3 34 3 L 16 3 z M 37 11 C 38.1 11 39 11.9 39 13 C 39 14.1 38.1 15 37 15 C 35.9 15 35 14.1 35 13 C 35 11.9 35.9 11 37 11 z M 25 14 C 31.07 14 36 18.93 36 25 C 36 31.07 31.07 36 25 36 C 18.93 36 14 31.07 14 25 C 14 18.93 18.93 14 25 14 z M 25 16 C 20.04 16 16 20.04 16 25 C 16 29.96 20.04 34 25 34 C 29.96 34 34 29.96 34 25 C 34 20.04 29.96 16 25 16 z"></path></svg>   
+           <svg class="w-8  h-8 cursor-pointer" xmlns="http://www.w3.org/2000/svg" x="0px" y="0px"
+            width="50" height="50"
+            viewBox="0 0 50 50"
+            style=" fill:#ffffff;"><path d="M 50.0625 10.4375 C 48.214844 11.257813 46.234375 11.808594 44.152344 12.058594 C 46.277344 10.785156 47.910156 8.769531 48.675781 6.371094 C 46.691406 7.546875 44.484375 8.402344 42.144531 8.863281 C 40.269531 6.863281 37.597656 5.617188 34.640625 5.617188 C 28.960938 5.617188 24.355469 10.21875 24.355469 15.898438 C 24.355469 16.703125 24.449219 17.488281 24.625 18.242188 C 16.078125 17.8125 8.503906 13.71875 3.429688 7.496094 C 2.542969 9.019531 2.039063 10.785156 2.039063 12.667969 C 2.039063 16.234375 3.851563 19.382813 6.613281 21.230469 C 4.925781 21.175781 3.339844 20.710938 1.953125 19.941406 C 1.953125 19.984375 1.953125 20.027344 1.953125 20.070313 C 1.953125 25.054688 5.5 29.207031 10.199219 30.15625 C 9.339844 30.390625 8.429688 30.515625 7.492188 30.515625 C 6.828125 30.515625 6.183594 30.453125 5.554688 30.328125 C 6.867188 34.410156 10.664063 37.390625 15.160156 37.472656 C 11.644531 40.230469 7.210938 41.871094 2.390625 41.871094 C 1.558594 41.871094 0.742188 41.824219 -0.0585938 41.726563 C 4.488281 44.648438 9.894531 46.347656 15.703125 46.347656 C 34.617188 46.347656 44.960938 30.679688 44.960938 17.09375 C 44.960938 16.648438 44.949219 16.199219 44.933594 15.761719 C 46.941406 14.3125 48.683594 12.5 50.0625 10.4375 Z"></path></svg> 
+            <svg class="w-8  h-8 cursor-pointer" xmlns="http://www.w3.org/2000/svg" x="0px" y="0px"
+            width="50" height="50"
+            viewBox="0 0 50 50"
+            style=" fill:#fffafa;"><path d="M 44.898438 14.5 C 44.5 12.300781 42.601563 10.699219 40.398438 10.199219 C 37.101563 9.5 31 9 24.398438 9 C 17.800781 9 11.601563 9.5 8.300781 10.199219 C 6.101563 10.699219 4.199219 12.199219 3.800781 14.5 C 3.398438 17 3 20.5 3 25 C 3 29.5 3.398438 33 3.898438 35.5 C 4.300781 37.699219 6.199219 39.300781 8.398438 39.800781 C 11.898438 40.5 17.898438 41 24.5 41 C 31.101563 41 37.101563 40.5 40.601563 39.800781 C 42.800781 39.300781 44.699219 37.800781 45.101563 35.5 C 45.5 33 46 29.398438 46.101563 25 C 45.898438 20.5 45.398438 17 44.898438 14.5 Z M 19 32 L 19 18 L 31.199219 25 Z"></path></svg> 
+    </div>
+  <div class="flex flex-col">
+    <div class="flex flex-row ml-10 text-gray-400 gap-20">
+      <p class="cursor-pointer hover:text-white"> Audio and Subtitles</p> 
+        <p class="cursor-pointer hover:text-white">Audio Description</p> 
+        <p class="ml-20 cursor-pointer hover:text-white">Help Center</p>
+      </div>
+    </div>
+
+    <div class="flex flex-row ml-10 text-gray-400 mt-4 space-x-40">
+      <p class="cursor-pointer hover:text-white">Gift Cards</p>
+      <p class="cursor-pointer hover:text-white">Media Center</p>
+      <p class="cursor-pointer hover:text-white">Investor Relations</p>
+    </div>
+
+    <div class="flex flex-row ml-10 text-gray-400 mt-4 space-x-40">
+      <p class="cursor-pointer hover:text-white">Jobs</p>
+      <p class="pl-10 cursor-pointer hover:text-white">Terms of  Use</p>
+      <p class="cursor-pointer hover:text-white">Privacy</p>
+    </div>
+
+    <div class="flex flex-row ml-10 text-gray-400 mt-4 space-x-20">
+      <p class="cursor-pointer hover:text-white">Legal Notices</p>
+      <p class="pl-10 cursor-pointer hover:text-white">Cookie Preferences</p>
+      <p class="mr-20 cursor-pointer hover:text-white">Corporate Information</p>
+    </div>
+
+    <div class="flex flex-row ml-10 text-gray-400 mt-4 space-x-4">
+      <p class="cursor-pointer hover:text-white">Contact Us</p>
+    </div>
+     
+    <button class="ml-10 mt-5 p-4 text-white border-4"
+    type="button">
+     Service Code
+    </button>
+
+    <p class="ml-10 mt-10 text-gray-400">@1997-2021 Netflix, Inc? {i-0000000000000000000}</p>
+
+
+    
+    </footer>
+  </body>
